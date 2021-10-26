@@ -138,24 +138,22 @@ class Jogo{
             };
         };
     }
+    telaFinal(){
+        game.addHide('.buttons');
+        game.addHide('.escolha');
+        game.addHide('.confirm');
+        game.addHide('.proximo');
+        game.removeHide('.novo');
+        game.removeHide('.desenvolvidoPor');
+    }
     qtdBolas(){
         //Testar se acabou o jogo
         if(this.np.length==0){
             game.msg('Fim de jogo, você perdeu! Acabaram suas bolas de gule para apostar.','r');
-            game.addHide('.buttons');
-            game.addHide('.escolha');
-            game.addHide('.confirm');
-            game.addHide('.proximo');
-            game.removeHide('.novo');
-            game.removeHide('.desenvolvidoPor');
+            game.telaFinal();
         }else if (this.np.length>=20){
             game.msg('Fim de jogo, você ganhou todas as bolas do computador. Parabéns!','r');
-            game.addHide('.buttons');
-            game.addHide('.escolha');
-            game.addHide('.confirm');
-            game.addHide('.proximo');
-            game.removeHide('.novo');
-            game.removeHide('.desenvolvidoPor');
+            game.telaFinal();
         }else{
             game.btnMostrarProximo();
         }

@@ -1,2 +1,2 @@
 # jogo-bolas-de-gude
- jogo de bolas de gude
+ Jogo de bolas de gude.

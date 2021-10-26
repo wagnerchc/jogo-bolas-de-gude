@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolas de Gude</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <div>
+                <h1>Jogo: Bolas de Gude</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bg-rules">
+            <div class="rules">
+                <p class="text-rules"><strong>Como jogar:</strong></p>
+                    <ul>
+                        <li>Na sua vez, escolha o número de bolas de gude que quer apostar e indique se o número de bolas escolhidas pelo computador é <strong>par</strong> ou <strong>ímpar</strong>.</li>
+                        <ul>
+                            <li>Finalize a jogada clicando em <u><em>"Confirmar"</em></u>.</li>
+                        </ul>
+                        <li>Na vez do computador, aposte somente a quantidade de bolas, porque ele vai tentar acertar se o número que você apostou é <strong>par</strong> ou <strong>ímpar</strong>.</li>
+                        <ul>
+                            <li>Finalize a jogada clicando em <u><em>"Confirmar"</em></u>.</li>
+                        </ul>
+                    </ul>
+                <p class="text-rules"><strong>O resultado de cada rodada (exemplo):</strong></p>
+                    <ul>
+                        <li>Na sua vez, se você acertar a paridade (par/ímpar) das bolas apostadas pelo computador, você recebe a quantidade que apostou até o limite de bolas apostadas pelo computador. O mesmo se aplica ao computador, na vez dele.</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="inicio">
+            <div class="bg-inicio">
+                <p class="btn-inicio" onclick="game.iniciar()">Iniciar</p>
+            </div>
+        </div>
+        <div class="ocultar hide">
+            <div class="central">
+                <div class="options">
+                    <div class="bg-teclado">
+                        <div class="buttons">
+                        </div>
+                        <div class="escolha">
+                            <div class="par">
+                                <p class="acao">Par</p>
+                            </div>
+                            <div class="impar">
+                                <p class="acao">Ímpar</p>
+                            </div>
+                        </div>
+                        <div class="confirm">
+                            <p class="acao">Confirmar</p>
+                        </div>
+                        <div class="proximo hide">
+                            <p class="acao">Próxima rodada</p>
+                        </div>
+                        <div class="novo hide">
+                            <p class="acao" onclick="document.location.reload()">Novo jogo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="res">
+                    <div class="msg">
+                        <div class="etapas"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="desenvolvidoPor">
+            <p class="autores">Desenvolvido por <a href="https://www.linkedin.com/in/wagnerchc/">WagnerChC</a> com apoio e sugestões técnicas de <a href="https://www.linkedin.com/in/alineaparecidapereira/">Aline Pereira</a>.</p>
+        </div>
+    </footer>
+        <script src="scripts/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+:root{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    /* Color Theme Swatches in Hex */
+    --color1: #FFFFFF;
+    --color2: #BC2142;
+    --color3: #F2AF5C;
+    --color4: #0B3528;
+    --color5: #000000;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background-color: var(--color4);
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+h1{
+    margin: 15px 0px;
+}
+p{
+    color: var(--color4);
+}
+.title, .inicio, .desenvolvidoPor{
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+.bg-rules{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+.rules{
+    background-color: var(--color1);
+    color: var(--color4);
+    margin: auto;
+    border-radius: 5px;
+    padding: 3px 15px;
+}
+.text-rules{
+    margin: 25px 0px;
+    padding: 0px 15px;
+}
+.inicio{
+    color: var(--color4);
+    font-size: 1.5rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.desenvolvidoPor{
+    color: var(--color4);
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.autores{
+    padding-left: 15px;
+}
+.bg-inicio{
+    height: 400px;
+    display: grid;
+}
+.btn-inicio{
+    margin: auto;
+    align-self: center;
+    justify-self: center;
+    height: 30px;
+}
+.ocultar{
+    margin-top: 10px;
+}
+.central{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    display: flex;
+}
+.options{
+    width: 40%;
+}
+.bg-teclado{
+    background-color: var(--color1);
+    border-radius: 5px;
+    padding: 1px 0px;
+}
+.buttons{
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.escolha{
+    display: flex;
+    margin-top: 10px;
+}
+.par, .impar, .confirm, .btn-inicio, .proximo, .novo{
+    background-color: var(--color2);
+    margin:auto;
+    border-radius: 3px;
+    width: 45%;
+    text-align: center;
+    color: var(--color1);
+    padding: 15px 0px 15px 0px;
+}
+.confirm, .proximo, .novo{
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.proximo{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+}
+.novo{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+}
+.res{
+    background-color: var(--color1);
+    margin-left: 15px;
+    width: 70%;
+    border-radius: 5px;
+}
+.msg{
+    margin: 15px;
+    color: var(--color4);
+    text-align: left;
+}
+.par:hover, .impar:hover, .confirm:hover, .btn-inicio:hover, .number:hover, .proximo:hover, .novo:hover{
+    background-color: var(--color5);
+}
+div.par, div.impar, div.confirm{
+    padding: 0px;
+}
+.number{
+    float: left;
+    text-align: center;
+    background-color: var(--color4);
+    color: var(--color1);
+    border-radius: 5px;
+    margin: 5px;
+    width: 65px;
+    padding: 10px 0px;
+    cursor:pointer;
+}
+p.acao{
+    margin: 0px;
+    padding: 10px 0px;
+    cursor: pointer;
+    color: var(--color1);
+}
+.etapas{
+    margin-top: 10px;
+    overflow-y: scroll;
+    height: 50vh;
+}
+.hide{
+    display: none;
+}
+.descricao-etapas-c{
+    background-color: var(--color2);
+    width: 60%;
+    border-radius: 5px;
+    float: right;
+    color: var(--color1);
+    margin-top: 5px;
+    margin-right: 11px;
+    padding: 5px;
+    text-align: right;
+}
+.descricao-etapas-p{
+    background-color: var(--color3);
+    width: 60%;
+    border-radius: 5px;
+    float: left;
+    color: var(--color4);
+    margin-top: 5px;
+    padding: 5px;
+    text-align: left;
+}
+.descricao-etapas-r{
+    background-color: var(--color4);
+    width: 96%;
+    border-radius: 5px;
+    float: left;
+    color: var(--color1);
+    margin-top: 5px;
+    padding: 10px 5px;
+    text-align: center;
+}
+.descricao-etapas-a{
+    background-color: var(--color5);
+    width: 90%;
+    border-radius: 5px;
+    float: left;
+    color: var(--color1);
+    margin-top: 5px;
+    padding: 10px 5px;
+    text-align: center;
+}
+@media (max-width: 475px){
+    h1{
+        font-size: 3vh;
+    }
+    .rules{
+        font-size: 1.8vh;
+    }
+    .text-rules{
+        margin: 10px;
+    }
+    .etapas{
+        max-height: 80vh;
+    }
+}

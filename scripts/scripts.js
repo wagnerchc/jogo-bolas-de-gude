@@ -123,18 +123,42 @@ class Jogo{
         if(this.vez%2>0){
             if(apostaComputador==this.paridadeP){
                 game.pagarAposta(this.np,this.numP,this.nc,this.numC);
-                game.msg('Você ganhou!','r');
+                if(this.nc.length!==0){
+                    if(this.numP>this.numC){
+                        game.msg(`Você ganhou ${this.numC} bolas.`,'r');
+                    }else{
+                        game.msg(`Você ganhou ${this.numP} bolas`,'r');
+                    };
+                };
             }else{
                 game.pagarAposta(this.nc,this.numC,this.np,this.numP);
-                game.msg('Você perdeu!','r');
+                if(this.np.length!==0){
+                    if(this.numC>this.numP){
+                        game.msg(`Você perdeu! ${this.numP}`,'r');
+                    }else{
+                        game.msg(`Você perdeu! ${this.numC}`,'r');
+                    };
+                };
             };
         }else{
             if(apostaJogador==this.paridadeC){
                 game.pagarAposta(this.nc,this.numC,this.np,this.numP);
-                game.msg('Você perdeu!','r');
+                if(this.np.length!==0){
+                    if(this.numC>this.numP){
+                        game.msg(`Você perdeu! ${this.numP}`,'r');
+                    }else{
+                        game.msg(`Você perdeu! ${this.numC}`,'r');
+                    };
+                };
             }else{
                 game.pagarAposta(this.np,this.numP,this.nc,this.numC);
-                game.msg('Você ganhou!','r');
+                if(this.nc.length!==0){
+                    if(this.numP>this.numC){
+                        game.msg(`Você ganhou ${this.numC} bolas.`,'r');
+                    }else{
+                        game.msg(`Você ganhou ${this.numP} bolas`,'r');
+                    };
+                };
             };
         };
     }

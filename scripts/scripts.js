@@ -127,16 +127,16 @@ class Jogo{
                     if(this.numP>this.numC){
                         game.msg(`Você ganhou ${this.numC} bolas.`,'r');
                     }else{
-                        game.msg(`Você ganhou ${this.numP} bolas`,'r');
+                        game.msg(`Você ganhou ${this.numP} bolas.`,'r');
                     };
                 };
             }else{
                 game.pagarAposta(this.nc,this.numC,this.np,this.numP);
                 if(this.np.length!==0){
                     if(this.numC>this.numP){
-                        game.msg(`Você perdeu! ${this.numP}`,'r');
+                        game.msg(`Você perdeu ${this.numP} bolas.`,'r');
                     }else{
-                        game.msg(`Você perdeu! ${this.numC}`,'r');
+                        game.msg(`Você perdeu ${this.numC} bolas.`,'r');
                     };
                 };
             };
@@ -145,9 +145,9 @@ class Jogo{
                 game.pagarAposta(this.nc,this.numC,this.np,this.numP);
                 if(this.np.length!==0){
                     if(this.numC>this.numP){
-                        game.msg(`Você perdeu! ${this.numP}`,'r');
+                        game.msg(`Você perdeu ${this.numP} bolas.`,'r');
                     }else{
-                        game.msg(`Você perdeu! ${this.numC}`,'r');
+                        game.msg(`Você perdeu ${this.numC} bolas.`,'r');
                     };
                 };
             }else{

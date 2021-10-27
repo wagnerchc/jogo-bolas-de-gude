@@ -170,6 +170,7 @@ p.acao{
     color: var(--color1);
     margin-top: 5px;
     margin-right: 11px;
+    margin-bottom: 2px;
     padding: 5px;
     text-align: right;
 }
@@ -180,6 +181,7 @@ p.acao{
     float: left;
     color: var(--color4);
     margin-top: 5px;
+    margin-bottom: 2px;
     padding: 5px;
     text-align: left;
 }
@@ -190,6 +192,7 @@ p.acao{
     float: left;
     color: var(--color1);
     margin-top: 5px;
+    margin-bottom: 2px;
     padding: 10px 5px;
     text-align: center;
 }
@@ -200,6 +203,7 @@ p.acao{
     float: left;
     color: var(--color1);
     margin-top: 5px;
+    margin-bottom: 2px;
     padding: 10px 5px;
     text-align: center;
 }
@@ -225,10 +229,9 @@ p.acao{
         height: 80px;
     }
     .central{
-        width: 98%;
-        margin: auto;
-        position: relative;
+        width: 100%;
         display: block;
+        margin-left: 4px;
     }
     .number{
         width: 55px;
@@ -249,6 +252,7 @@ p.acao{
     }
     .etapas{
         max-height: 45vh;
+        padding-bottom: 5px;
     }
     .descricao-etapas-c, .descricao-etapas-p, .descricao-etapas-r, .descricao-etapas-a{
         margin-bottom: 0px;
